@@ -99,3 +99,12 @@ inputDecimal = (dot) => {
     }
     currentNumber += dot
 }
+
+const percentage = document.querySelector('.percentage')
+
+const inputPercentage = () => {
+    if(currentNumber.includes ('%')) {
+        return
+    }
+    currentNumber = currentNumber/100
+}
