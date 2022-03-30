@@ -108,3 +108,9 @@ const inputPercentage = () => {
     }
     currentNumber = currentNumber/100
 }
+
+percentage.addEventListener('click', (event) => {
+    inputPercentage(event.target.value)
+    updateScreen(currentNumber)
+    console.log(parseFloat(currentNumber))
+})
